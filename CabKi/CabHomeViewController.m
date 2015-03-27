@@ -35,7 +35,7 @@
     switch_label.transform = CGAffineTransformMakeScale(1.0, 0.72);
     NSUserDefaults *def=[NSUserDefaults standardUserDefaults];
     
-  
+    NSLog(@"Aastha");
 
     if ([def valueForKey:@"cab_cloud_status"]!=nil) {
         
