@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivateBookingMeterReadingPage">
+            <connections>
+                <outlet property="currencyIconLbl" destination="HpE-IK-ez4" id="gCm-Ao-R8G"/>
+                <outlet property="done_btn" destination="4LX-al-8su" id="0Mt-7t-DzU"/>
+                <outlet property="mapView" destination="Ajc-RI-TWc" id="UYF-QJ-fWb"/>
+                <outlet property="priceField" destination="zcD-Z8-WQz" id="Xkm-J4-zqP"/>
+                <outlet property="readingDate" destination="2zC-II-8d7" id="xpm-IJ-z1j"/>
+                <outlet property="readingTime" destination="yke-6O-mhn" id="3Fg-DC-jDO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7LZ-LE-RB5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCc-qX-3EM">
+                    <rect key="frame" x="13" y="132" width="294" height="280"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slide_img.png" translatesAutoresizingMaskIntoConstraints="NO" id="IXj-hN-YeY">
+                            <rect key="frame" x="-2" y="0.0" width="299" height="280"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13:26" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yke-6O-mhn">
+                            <rect key="frame" x="18" y="38" width="70" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zcD-Z8-WQz">
+                            <rect key="frame" x="9" y="89" width="276" height="39"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Meter Reading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGa-UY-5l4">
+                            <rect key="frame" x="22" y="63" width="246" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ajc-RI-TWc">
+                            <rect key="frame" x="8" y="137" width="278" height="124"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="6sx-vQ-PWl"/>
+                            </connections>
+                        </mapView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="25/01/2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zC-II-8d7">
+                            <rect key="frame" x="164" y="39" width="111" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpE-IK-ez4">
+                            <rect key="frame" x="29" y="98" width="24" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-v0-u3T">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meter Reading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kik-9O-BOb">
+                            <rect key="frame" x="56" y="26" width="207" height="28"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.92855149869999998" green="0.91705403689999998" blue="0.105179089" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.2456005366" green="0.2456005366" blue="0.2456005366" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="requestdriverbackgroun.png" translatesAutoresizingMaskIntoConstraints="NO" id="C1w-Bm-mG9">
+                    <rect key="frame" x="0.0" y="505" width="320" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63" id="R3x-9c-H2c"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LX-al-8su">
+                    <rect key="frame" x="20" y="516" width="280" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="AN9-IH-3KG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                    <state key="normal" title="Done" backgroundImage="YellowButton-Background.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="donebtn_action:" destination="-1" eventType="touchUpInside" id="RpV-ac-Lle"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4LX-al-8su" secondAttribute="trailing" constant="20" id="7g0-BR-VT8"/>
+                <constraint firstAttribute="bottom" secondItem="4LX-al-8su" secondAttribute="bottom" constant="9" id="UoQ-nW-EO6"/>
+                <constraint firstItem="4LX-al-8su" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="iIL-tl-s4U"/>
+                <constraint firstItem="C1w-Bm-mG9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="p54-4T-5Kg"/>
+                <constraint firstAttribute="trailing" secondItem="C1w-Bm-mG9" secondAttribute="trailing" id="sst-hT-F4a"/>
+                <constraint firstAttribute="bottom" secondItem="C1w-Bm-mG9" secondAttribute="bottom" id="t0v-AI-HQc"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="-301" y="312"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="YellowButton-Background.png" width="278" height="43"/>
+        <image name="requestdriverbackgroun.png" width="320" height="72"/>
+        <image name="slide_img.png" width="299" height="297"/>
+    </resources>
+</document>

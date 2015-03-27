@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="HuK-9S-kgQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_640x1136.png" translatesAutoresizingMaskIntoConstraints="NO" id="1hd-in-ngl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Can-lM-tAt">
+                    <rect key="frame" x="13" y="614" width="209" height="35"/>
+                    <color key="backgroundColor" red="0.91318558670000005" green="0.34071979679999997" blue="0.1491241076" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="VsB-pY-ZjN"/>
+                        <constraint firstAttribute="width" constant="209" id="ac0-j1-qMD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Create Account">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="CreateAccount:" destination="-1" eventType="touchUpInside" id="2V7-Pi-lQ3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UW-YB-MmP">
+                    <rect key="frame" x="230" y="614" width="137" height="35"/>
+                    <color key="backgroundColor" red="0.15915975769999999" green="0.141068045" blue="0.1567266457" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="otY-dN-a7x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchUpInside" id="Iua-jL-W1c"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1hd-in-ngl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2c8-V4-wXt"/>
+                <constraint firstItem="1hd-in-ngl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7w0-hV-L4C"/>
+                <constraint firstItem="8UW-YB-MmP" firstAttribute="baseline" secondItem="Can-lM-tAt" secondAttribute="baseline" id="8vs-Bo-MPt"/>
+                <constraint firstAttribute="bottom" secondItem="Can-lM-tAt" secondAttribute="bottom" constant="18" id="DOj-sQ-7IS"/>
+                <constraint firstAttribute="trailing" secondItem="8UW-YB-MmP" secondAttribute="trailing" constant="8" id="GAO-kz-42L"/>
+                <constraint firstAttribute="trailing" secondItem="1hd-in-ngl" secondAttribute="trailing" id="MGJ-s6-Jpy"/>
+                <constraint firstAttribute="trailing" secondItem="1hd-in-ngl" secondAttribute="trailing" id="PjH-vB-pO5"/>
+                <constraint firstAttribute="bottom" secondItem="1hd-in-ngl" secondAttribute="bottom" id="aoT-V2-lQb"/>
+                <constraint firstItem="8UW-YB-MmP" firstAttribute="leading" secondItem="Can-lM-tAt" secondAttribute="trailing" constant="8" id="chm-Rk-Goa"/>
+                <constraint firstItem="Can-lM-tAt" firstAttribute="top" secondItem="1hd-in-ngl" secondAttribute="bottom" constant="-53" id="iPx-uM-Mfg"/>
+                <constraint firstAttribute="bottom" secondItem="1hd-in-ngl" secondAttribute="bottom" id="lpB-M8-2Mm"/>
+                <constraint firstItem="Can-lM-tAt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="nOC-FG-QVt"/>
+                <constraint firstItem="1hd-in-ngl" firstAttribute="leading" secondItem="Can-lM-tAt" secondAttribute="trailing" constant="-222" id="vmB-iO-26m"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="192.5" y="225.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_640x1136.png" width="320" height="480"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
