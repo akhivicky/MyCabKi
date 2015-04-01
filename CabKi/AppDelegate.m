@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 
@@ -60,6 +62,7 @@
     }
 
     else{
+        
         ViewController * controller=[[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
         nav=[[UINavigationController alloc]initWithRootViewController:controller];
     
@@ -78,6 +81,7 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     
+    [Fabric with:@[CrashlyticsKit]];
 
     return YES;
 }

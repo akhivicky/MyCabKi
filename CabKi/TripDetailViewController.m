@@ -138,11 +138,6 @@
     destination_lat=[data valueForKey:@"destination_lat"];
     destination_long=[data valueForKey:@"destination_long"];
     cablocation_array=[data valueForKey:@"cab_loc"];
-//    for (int i=0; i<[cablocation_array count]; i++) {
-//        NSMutableArray *cab=[cablocation_array objectAtIndex:i];
-//        cab_lat=[cab valueForKey:@"latitute"];
-//        cab_long=[cab valueForKey:@"longitude"];
-//    }
     cab_lat_arr=[cablocation_array valueForKey:@"latitute"];
     cab_long_arr=[cablocation_array valueForKey:@"longitude"];
     
@@ -273,7 +268,7 @@
         }
         
     }
-    NSLog(@"print rrrrrrr=%@",wholeSTR);
+   
     NSArray* pointStrings = [wholeSTR componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     

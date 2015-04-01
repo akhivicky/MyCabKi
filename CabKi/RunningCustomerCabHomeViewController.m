@@ -178,7 +178,7 @@
                     toItem:self.view
                     attribute:NSLayoutAttributeTop
                     multiplier:1.0
-                    constant:140];
+                    constant:120];
     [self.view addConstraint:constraintBtn];
     
     [self hideViewsSecond];

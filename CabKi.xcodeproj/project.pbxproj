@@ -178,6 +178,8 @@
 		84B8C8E21AB896D600C400E4 /* TripHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8C8E01AB896D600C400E4 /* TripHistoryViewController.m */; };
 		84B8C8E31AB896D600C400E4 /* TripHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B8C8E11AB896D600C400E4 /* TripHistoryViewController.xib */; };
 		84BD299E1A2DF49000065E3E /* CustomTableViewS4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BD299D1A2DF49000065E3E /* CustomTableViewS4.xib */; };
+		84C41F711AC7072E00A47EE0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C41F6F1AC7072E00A47EE0 /* Crashlytics.framework */; };
+		84C41F721AC7072E00A47EE0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C41F701AC7072E00A47EE0 /* Fabric.framework */; };
 		84C5221E1A86573200B26A24 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5221D1A86573200B26A24 /* HomeViewController.xib */; };
 		84CDC4561A29B04B001A2679 /* CustomTableViewS1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CDC4551A29B04B001A2679 /* CustomTableViewS1.xib */; };
 		84D1EC851A77A6A50069280D /* CustomerRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1EC831A77A6A50069280D /* CustomerRequestViewController.m */; };
@@ -462,6 +464,8 @@
 		84B8C8E01AB896D600C400E4 /* TripHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripHistoryViewController.m; sourceTree = "<group>"; };
 		84B8C8E11AB896D600C400E4 /* TripHistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripHistoryViewController.xib; sourceTree = "<group>"; };
 		84BD299D1A2DF49000065E3E /* CustomTableViewS4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewS4.xib; sourceTree = "<group>"; };
+		84C41F6F1AC7072E00A47EE0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		84C41F701AC7072E00A47EE0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		84C5221D1A86573200B26A24 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		84CDC4551A29B04B001A2679 /* CustomTableViewS1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewS1.xib; sourceTree = "<group>"; };
 		84D1EC821A77A6A50069280D /* CustomerRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerRequestViewController.h; sourceTree = "<group>"; };
@@ -498,6 +502,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C41F711AC7072E00A47EE0 /* Crashlytics.framework in Frameworks */,
+				84C41F721AC7072E00A47EE0 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,6 +872,8 @@
 		84A211591A1F43B400DE09BB = {
 			isa = PBXGroup;
 			children = (
+				84C41F6F1AC7072E00A47EE0 /* Crashlytics.framework */,
+				84C41F701AC7072E00A47EE0 /* Fabric.framework */,
 				84A31A161AC5CEE80012368B /* gpslocator2.png */,
 				844DE00C1A65273F000BF00C /* path.nmea */,
 				84A211641A1F43B400DE09BB /* CabKi */,
@@ -1141,6 +1149,7 @@
 				84A2115E1A1F43B400DE09BB /* Sources */,
 				84A2115F1A1F43B400DE09BB /* Frameworks */,
 				84A211601A1F43B400DE09BB /* Resources */,
+				84C41F6E1AC706CB00A47EE0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1189,6 +1198,7 @@
 					};
 					84A2117A1A1F43B400DE09BB = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 983259H678;
 						TestTargetID = 84A211611A1F43B400DE09BB;
 					};
 				};
@@ -1342,6 +1352,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84C41F6E1AC706CB00A47EE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 58aa65daf487a532003defeae67d0474c64ed2af a8dd60e74229de207038541f10d2020186f4a14a8652d18b57061776f2a864f9";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84A2115E1A1F43B400DE09BB /* Sources */ = {
@@ -1542,13 +1568,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mukesh Molugu (S7P942NJ47)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mukesh Molugu (S7P942NJ47)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CabKi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2b2b7839-b7b3-40bd-8f90-2e28553772bc";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1558,13 +1588,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: New York Global Consultants Corp. (983259H678)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: New York Global Consultants Corp. (983259H678)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CabKi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "42f6187d-b1f5-4c9a-b39e-af1cd9e82c48";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1573,7 +1607,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mukesh Molugu (S7P942NJ47)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1585,7 +1620,7 @@
 				INFOPLIST_FILE = CabKiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2410e94c-a321-423a-9c3b-868363c50112";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CabKi.app/CabKi";
 			};
 			name = Debug;
@@ -1594,7 +1629,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: New York Global Consultants Corp. (983259H678)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1602,7 +1638,7 @@
 				INFOPLIST_FILE = CabKiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "42f6187d-b1f5-4c9a-b39e-af1cd9e82c48";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CabKi.app/CabKi";
 			};
 			name = Release;
